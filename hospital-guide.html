@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>إرشادات المستشفى | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/journey.css">
+    <link rel="stylesheet" href="css/hospital.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page hospital-guide-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="journey-page hospital-guide-main">
+
+    <section class="journey-container hospital-guide-container">
+
+
+        <!-- Back -->
+
+        <div class="journey-top-actions">
+
+            <a
+                href="hospital.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    فحص الوصول
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+                <i class="fa-regular fa-hospital"></i>
+            </div>
+
+            <div>
+                <span>المرحلة الثالثة</span>
+                <strong>داخل المستشفى</strong>
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="hospital-guide-heading">
+
+            <h1>
+                وين تروح هسا؟
+            </h1>
+
+            <p>
+                خليك على خطوة واحدة كل مرة.
+                لما توصل، رفيق بعطيك الخطوة اللي بعدها.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HOSPITAL
+        ================================================== -->
+
+        <div class="hospital-guide-destination">
+
+            <span class="hospital-guide-destination-icon">
+
+                <i class="fa-regular fa-hospital"></i>
+
+            </span>
+
+
+            <div>
+
+                <span class="card-label">
+                    مستشفاك
+                </span>
+
+                <strong id="hg-hospital-name">
+                    المستشفى المختار
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SHARE LOCATION
+        ================================================== -->
+
+        <div class="hospital-location-share">
+
+            <button
+                type="button"
+                id="hg-share-location-btn"
+                class="hospital-share-btn hospital-share-final"
+            >
+
+                <i class="fa-solid fa-location-arrow"></i>
+
+                <span>
+                    شارك موقعي مع المرافق
+                </span>
+
+            </button>
+
+
+            <p
+                id="hg-share-status"
+                class="share-status"
+                hidden
+                aria-live="polite"
+            ></p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CURRENT / NEXT STEP
+        ================================================== -->
+
+        <div class="hospital-next-step-final">
+
+
+            <div class="hospital-next-heading">
+
+                <span class="hospital-next-icon">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </span>
+
+
+                <div>
+
+                    <span class="card-label">
+                        اعمل هسا
+                    </span>
+
+                    <h2 id="hg-step-title">
+                        توجه إلى الاستقبال
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <p
+                id="hg-step-desc"
+                class="hospital-step-description"
+            >
+                اعرض هويتك وتفاصيل موعدك عند الوصول.
+            </p>
+
+
+
+            <!-- Read step -->
+
+          
+
+
+
+            <!-- =================================================
+                 DEPARTMENT SELECT
+            ================================================== -->
+
+            <div
+                id="hg-department-select-wrap"
+                class="hospital-department-final"
+                style="display:none;"
+            >
+
+                <div class="hospital-department-heading">
+
+                    <span class="hospital-department-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <span class="card-label">
+                            القسم
+                        </span>
+
+                        <h3>
+                            وين وجّهوك؟
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <label
+                    for="hg-department-select"
+                    class="hospital-select-label"
+                >
+                    اختار القسم اللي وجّهوك إله
+                </label>
+
+
+                <div class="hospital-select-wrapper">
+
+                    <select id="hg-department-select">
+
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            اختر القسم
+                        </option>
+
+                        <option value="reception-emergency">
+                            الإسعاف والطوارئ
+                        </option>
+
+                        <option value="radiology">
+                            الأشعة التشخيصية
+                        </option>
+
+                        <option value="labs">
+                            المختبرات الطبية وبنك الدم
+                        </option>
+
+                        <option value="pharmacy">
+                            الصيدلية الرئيسية
+                        </option>
+
+                        <option value="outpatient">
+                            العيادات الخارجية
+                        </option>
+
+                        <option value="obgyn">
+                            النسائية والتوليد
+                        </option>
+
+                        <option value="nicu">
+                            العناية المكثفة لحديثي الولادة (الخداج)
+                        </option>
+
+                        <option value="internal-men">
+                            الطب الباطني (رجال)
+                        </option>
+
+                        <option value="neurosurgery">
+                            جراحة الدماغ والأعصاب
+                        </option>
+
+                        <option value="major-surgery">
+                            العمليات الكبرى
+                        </option>
+
+                        <option value="icu">
+                            العناية الحثيثة (ICU)
+                        </option>
+
+                        <option value="pediatrics">
+                            الأطفال وجراحة قلب الأطفال
+                        </option>
+
+                        <option value="dialysis">
+                            وحدة غسيل الكلى (الكلية الصناعية)
+                        </option>
+
+                    </select>
+
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+                <p
+                    id="hg-department-error"
+                    class="department-error"
+                    style="display:none;"
+                    role="alert"
+                >
+                    اختار القسم أولًا حتى نكمل.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FLOOR RESULT
+            ================================================== -->
+
+            <div
+                id="hg-floor-result"
+                class="floor-result hospital-floor-result-final"
+                style="display:none;"
+            >
+
+                <span class="hospital-floor-icon">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </span>
+
+
+                <div>
+
+                    <span class="floor-result-label">
+                        الطابق
+                    </span>
+
+                    <strong id="hg-floor-result-value">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Floor map generated by hospital.js -->
+
+            <div
+                id="hg-floor-map"
+                class="floor-map hospital-floor-map-final"
+                style="display:none;"
+            ></div>
+
+
+
+            <!-- Note generated by hospital.js -->
+
+            <div
+                class="verified-note step-note-muted hospital-step-note-final"
+                id="hg-step-note"
+            ></div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             ROUTE PROGRESS
+        ================================================== -->
+
+        <div class="hospital-route hospital-route-final">
+
+
+            <div
+                class="hospital-route-step active-route"
+                id="hg-route-reception"
+            >
+
+                <span>1</span>
+
+                <strong>
+                    الاستقبال
+                </strong>
+
+            </div>
+
+
+            <div class="route-line"></div>
+
+
+            <div
+                class="hospital-route-step"
+                id="hg-route-floor"
+            >
+
+                <span>2</span>
+
+                <strong>
+                    القسم
+                </strong>
+
+            </div>
+
+
+            <div class="route-line"></div>
+
+
+            <div
+                class="hospital-route-step"
+                id="hg-route-department"
+            >
+
+                <span>3</span>
+
+                <strong>
+                    التوجه
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN ACTION
+        ================================================== -->
+
+        <button
+            type="button"
+            id="hg-next-btn"
+            class="primary-btn hospital-guide-next-btn"
+        >
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                وصلت، أعطيني الخطوة التالية
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             PROBLEM BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            id="hg-problem-btn"
+            class="hospital-problem-btn hospital-problem-final-btn"
+        >
+
+            <i class="fa-regular fa-circle-question"></i>
+
+            <span>
+                واجهت مشكلة
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             PROBLEM BOX
+        ================================================== -->
+
+        <div
+            id="hg-problem-box"
+            class="hospital-problem-box hospital-problem-final-box"
+            style="display:none;"
+        >
+
+
+            <div class="hospital-problem-heading">
+
+                <span class="hospital-problem-heading-icon">
+
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+
+                </span>
+
+
+                <div>
+
+                    <span class="card-label">
+                        رفيق معك
+                    </span>
+
+                    <h3>
+                        شو المشكلة؟
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <p class="problem-description">
+                اختار اللي صار معك،
+                ومنعطيك خطوة واضحة تكمل منها.
+            </p>
+
+
+
+            <div class="hospital-problem-options">
+
+
+                <button
+                    type="button"
+                    class="hospital-problem-option"
+                    data-problem="department"
+                >
+
+                    <span class="hospital-problem-option-icon">
+
+                        <i class="fa-solid fa-building-circle-xmark"></i>
+
+                    </span>
+
+                    <span>
+                        مش لاقي القسم
+                    </span>
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="hospital-problem-option"
+                    data-problem="location"
+                >
+
+                    <span class="hospital-problem-option-icon">
+
+                        <i class="fa-solid fa-location-crosshairs"></i>
+
+                    </span>
+
+                    <span>
+                        مش عارف وين أنا
+                    </span>
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="hospital-problem-option"
+                    data-problem="different"
+                >
+
+                    <span class="hospital-problem-option-icon">
+
+                        <i class="fa-solid fa-diamond-turn-right"></i>
+
+                    </span>
+
+                    <span>
+                        تم توجيهي لمكان مختلف
+                    </span>
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- Solution -->
+
+            <div
+                id="hg-problem-solution"
+                class="hospital-problem-solution hospital-problem-solution-final"
+                style="display:none;"
+            >
+
+                <div class="hospital-solution-heading">
+
+                    <span class="hospital-solution-icon">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <span class="problem-solution-label">
+                            اعمل هسا
+                        </span>
+
+                        <strong>
+                            خطوتك التالية
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <p id="hg-problem-solution-text"></p>
+
+
+                <button
+                    type="button"
+                    id="hg-read-problem-btn"
+                    class="hospital-read-btn hospital-read-final"
+                >
+
+                    <i class="fa-solid fa-volume-high"></i>
+
+                    <span>
+                        اسمع الحل
+                    </span>
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/accessibility.js"></script>
+<script src="js/hospital.js"></script>
+
+
+</body>
+</html>

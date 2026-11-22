@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>طلب مرافق | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/companion.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page companion-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <!-- Logo → Home -->
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="العودة للصفحة الرئيسية"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+
+    </a>
+
+
+    <div class="header-tools">
+
+        <!-- الصوت -->
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <span>
+                الصوت
+            </span>
+
+        </button>
+
+
+        <!-- الترجمة -->
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+
+            <i class="fa-solid fa-camera"></i>
+
+            <span>
+                ترجمة
+            </span>
+
+        </a>
+
+
+        <!-- الخدمات -->
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+                خدمات
+            </span>
+
+        </a>
+
+        <!--
+            accessibility.js
+            يضيف أزرار تكبير وتصغير الخط
+        -->
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="companion-page companion-page-final">
+
+
+    <!-- Back -->
+
+    <div class="companion-top-actions">
+
+        <a
+            href="checklist.html"
+            class="clear-back-link"
+        >
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>
+                العودة للجاهزية
+            </span>
+
+        </a>
+
+    </div>
+
+
+
+    <section class="companion-container companion-container-final">
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    مساعدة إضافية
+                </span>
+
+                <strong>
+                    طلب مرافق
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="companion-heading">
+
+            <h1>
+                محتاج مرافق لرحلتك؟
+            </h1>
+
+            <p>
+                أدخل بياناتك الأساسية،
+                ورفيق بجهز لك رسالة الطلب حتى تكملها عبر WhatsApp.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             IMPORTANT NOTE
+        ================================================== -->
+
+        <div class="companion-info-box">
+
+            <div class="companion-info-icon">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    كيف بتم الطلب؟
+                </strong>
+
+                <p>
+                    رفيق بجهز رسالة فيها بيانات الطلب،
+                    وبعدها بيفتح WhatsApp حتى تراجع الرسالة
+                    وتختار إرسالها بنفسك.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FORM CARD
+        ================================================== -->
+
+        <div class="companion-card companion-card-final">
+
+
+            <div class="companion-card-heading">
+
+                <div class="companion-form-icon">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        بيانات طلب المرافق
+                    </h2>
+
+                    <p>
+                        عبّي المعلومات التالية حتى نجهز الرسالة.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <form
+                id="companion-form"
+                class="companion-form companion-form-final"
+            >
+
+
+                <!-- Name -->
+
+                <div class="companion-form-group">
+
+                    <label for="companion-name">
+
+                        <span class="companion-field-icon">
+
+                            <i class="fa-regular fa-user"></i>
+
+                        </span>
+
+                        <span>
+                            اسمك
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="companion-name"
+                        name="companion-name"
+                        autocomplete="name"
+                        placeholder="اكتب اسمك"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Phone -->
+
+                <div class="companion-form-group">
+
+                    <label for="companion-phone">
+
+                        <span class="companion-field-icon">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                        </span>
+
+                        <span>
+                            رقم الجوال
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="companion-phone"
+                        name="companion-phone"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        placeholder="مثال: 0590000000"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Hospital -->
+
+                <div class="companion-form-group">
+
+                    <label for="companion-hospital">
+
+                        <span class="companion-field-icon">
+
+                            <i class="fa-regular fa-hospital"></i>
+
+                        </span>
+
+                        <span>
+                            المستشفى
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="companion-hospital"
+                        name="companion-hospital"
+                        readonly
+                    >
+
+                </div>
+
+
+
+                <!-- Submit -->
+
+                <button
+                    type="submit"
+                    class="primary-btn companion-cta-btn companion-submit-final"
+                >
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <span>
+                        تجهيز الطلب وفتح WhatsApp
+                    </span>
+
+                </button>
+
+
+                <p class="companion-form-note">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    تأكد من البيانات قبل إرسال الرسالة،
+                    ولا تضف معلومات طبية أو وثائق حساسة غير ضرورية.
+
+                </p>
+
+            </form>
+
+
+
+            <!-- =================================================
+                 SUCCESS
+            ================================================== -->
+
+            <div
+                id="companion-success"
+                class="companion-success companion-success-final"
+                hidden
+            >
+
+                <div class="success-icon">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </div>
+
+
+                <h2>
+                    تم تجهيز طلبك
+                </h2>
+
+
+                <p>
+                    تم فتح WhatsApp بالرسالة الجاهزة.
+                    راجع الرسالة وأرسلها من WhatsApp إذا كانت المعلومات صحيحة.
+                </p>
+
+
+                <a
+                    href="checklist.html"
+                    class="primary-btn companion-return-btn"
+                >
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                    <span>
+                        العودة وإكمال الجاهزية
+                    </span>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             RETURN WITHOUT REQUEST
+        ================================================== -->
+
+        <a
+            href="checklist.html"
+            class="companion-cancel-link"
+        >
+
+            <i class="fa-solid fa-person-walking"></i>
+
+            <span>
+                ما بدي أطلب مرافق، برجع أكمل رحلتي
+            </span>
+
+        </a>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/companion.js"></script>
+<script src="js/accessibility.js"></script>
+
+
+<script>
+
+    /*
+       هذه صفحة مساعدة داخل الـChecklist،
+       لذلك لا نغيّر rafiqCurrentPage إلى هذه الصفحة.
+
+       إذا المستخدم ضغط "أكمل رحلتي"
+       الأفضل يرجع للـChecklist وليس لنموذج طلب المرافق.
+    */
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اختيار المستشفى | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page">
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="العودة للصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <!-- الصوت -->
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+
+            <span>
+                الصوت
+            </span>
+        </button>
+
+
+        <!-- ترجمة -->
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+
+            <span>
+                ترجمة
+            </span>
+        </a>
+
+
+        <!-- الخدمات -->
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+                خدمات
+            </span>
+        </a>
+
+        <!-- A- و A+ يضيفهم accessibility.js -->
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE
+===================================================== -->
+
+<main class="setup-page readiness-final-page">
+
+
+    <!-- Back -->
+
+    <div class="page-top-actions">
+
+        <a
+            href="index.html"
+            class="clear-back-link"
+        >
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>
+                الصفحة الرئيسية
+            </span>
+        </a>
+
+    </div>
+
+
+
+    <section class="setup-content">
+
+
+        <!-- =============================================
+             Stage
+        ============================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+                <i class="fa-solid fa-suitcase-medical"></i>
+            </div>
+
+            <div>
+                <span>
+                    المرحلة الأولى
+                </span>
+
+                <strong>
+                    الاستعداد للرحلة
+                </strong>
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             Heading
+        ============================================== -->
+
+        <div class="readiness-heading">
+
+            <h1>
+                وين موعدك؟
+            </h1>
+
+            <p class="page-description">
+                اختار المستشفى اللي عندك موعد فيه،
+                ورفيق بجهز رحلتك خطوة بخطوة.
+            </p>
+
+        </div>
+
+
+
+        <!-- =============================================
+             Progress
+        ============================================== -->
+
+        <div
+            class="progress progress-accessible"
+            aria-label="مراحل الرحلة"
+        >
+
+            <div class="progress-step active">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>
+                    الاستعداد
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    2
+                </span>
+
+                <p>
+                    الطريق
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    3
+                </span>
+
+                <p>
+                    المستشفى
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    4
+                </span>
+
+                <p>
+                    بعد الزيارة
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             Hospital Card
+        ============================================== -->
+
+        <div class="destination-card destination-card-final">
+
+
+            <div class="destination-title-row">
+
+                <div class="destination-icon hospital-main-icon">
+
+                    <i class="fa-solid fa-hospital"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        اختار المستشفى
+                    </h2>
+
+                    <p>
+                        اضغط على القائمة واختار وجهتك.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Hospital Dropdown -->
+
+            <div class="hospital-dropdown">
+
+
+                <button
+                    type="button"
+                    class="hospital-dropdown-button hospital-selector-final"
+                    id="hospital-dropdown-button"
+                    aria-expanded="false"
+                >
+
+                    <span class="dropdown-selected">
+
+
+                        <span class="hospital-small-icon">
+
+                            <i class="fa-solid fa-hospital"></i>
+
+                        </span>
+
+
+                        <span id="selected-hospital-text">
+                            اختر المستشفى
+                        </span>
+
+                    </span>
+
+
+                    <span
+                        class="dropdown-arrow"
+                        id="dropdown-arrow"
+                        aria-hidden="true"
+                    >
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </span>
+
+                </button>
+
+
+
+                <div
+                    class="hospital-dropdown-menu"
+                    id="hospital-dropdown-menu"
+                >
+
+
+                    <button
+                        type="button"
+                        class="hospital-dropdown-option"
+                        data-value="makassed"
+                        data-name="مستشفى المقاصد"
+                    >
+
+                        <span class="hospital-option-icon">
+
+                            <i class="fa-solid fa-hospital"></i>
+
+                        </span>
+
+
+                        <span class="hospital-option-copy">
+
+                            <strong>
+                                مستشفى المقاصد
+                            </strong>
+
+                            <small>
+                                القدس
+                            </small>
+
+                        </span>
+
+
+                        <i
+                            class="fa-solid fa-chevron-left hospital-option-arrow"
+                            aria-hidden="true"
+                        ></i>
+
+                    </button>
+
+
+
+                    <div class="future-hospitals">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <div>
+
+                            <span>
+                                مستشفيات أخرى
+                            </span>
+
+                            <small>
+                                سيتم إضافتها لاحقًا
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <p
+                id="hospital-message"
+                class="selection-message"
+                aria-live="polite"
+            ></p>
+
+
+        </div>
+
+
+
+        <!-- =============================================
+             Next
+        ============================================== -->
+
+        <button
+            type="button"
+            class="primary-btn destination-next destination-next-final"
+            id="continue-hospital"
+        >
+
+            <span>
+                التالي
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+
+
+        <!-- =============================================
+             Info
+        ============================================== -->
+
+        <div class="destination-info destination-info-final">
+
+            <span class="info-symbol">
+
+                <i class="fa-solid fa-circle-info"></i>
+
+            </span>
+
+
+            <p>
+                حاليًا رفيق يدعم مستشفى المقاصد ضمن النسخة التجريبية.
+            </p>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="js/main.js"></script>
+<script src="js/accessibility.js"></script>
+
+
+<script>
+    /*
+       حفظ مكان المستخدم حتى يعمل
+       زر "أكمل رحلتي" من الصفحة الرئيسية
+    */
+
+    localStorage.setItem(
+        "rafiqCurrentPage",
+        "readiness.html"
+    );
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>داخل المستشفى | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hospital.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page hospital-check-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="setup-page hospital-check-main">
+
+    <section class="setup-content hospital-check-content">
+
+
+        <!-- Back -->
+
+        <div class="hospital-top-actions">
+
+            <a
+                href="arrival.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    الوصول للمستشفى
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+
+                <i class="fa-regular fa-hospital"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    المرحلة الثالثة
+                </span>
+
+                <strong>
+                    داخل المستشفى
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="hospital-check-heading">
+
+            <h1>
+                قبل ما تكمل
+            </h1>
+
+            <p>
+                تأكد إن الأشياء الأساسية معك.
+                اضغط على كل شيء موجود معك.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <div
+            class="progress progress-accessible"
+            aria-label="مراحل الرحلة"
+        >
+
+            <div class="progress-step completed">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>الاستعداد</p>
+
+            </div>
+
+
+            <div class="progress-step completed">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>الطريق</p>
+
+            </div>
+
+
+            <div class="progress-step active">
+
+                <span>3</span>
+
+                <p>المستشفى</p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>4</span>
+
+                <p>بعد الزيارة</p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HOSPITAL CHECKLIST
+        ================================================== -->
+
+        <div class="hospital-checklist hospital-checklist-final">
+
+
+            <!-- Patient ID -->
+
+            <label class="check-item hospital-check-item">
+
+                <input
+                    type="checkbox"
+                    id="hc-id"
+                >
+
+
+                <span class="hospital-check-icon">
+
+                    <i class="fa-regular fa-id-card"></i>
+
+                </span>
+
+
+                <span class="hospital-check-text">
+
+                    <strong>
+                        هوية المريض
+                    </strong>
+
+                    <small>
+                        هويتك أو وثيقة التعريف المطلوبة لزيارتك
+                    </small>
+
+                </span>
+
+
+                <span class="hospital-check-state">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </span>
+
+            </label>
+
+
+
+            <!-- Appointment -->
+
+            <label class="check-item hospital-check-item">
+
+                <input
+                    type="checkbox"
+                    id="hc-appointment"
+                >
+
+
+                <span class="hospital-check-icon">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                </span>
+
+
+                <span class="hospital-check-text">
+
+                    <strong>
+                        إثبات الموعد
+                    </strong>
+
+                    <small>
+                        تفاصيل الموعد أو التحويلة الموجودة معك
+                    </small>
+
+                </span>
+
+
+                <span class="hospital-check-state">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </span>
+
+            </label>
+
+
+
+            <!-- Insurance -->
+
+            <label class="check-item hospital-check-item">
+
+                <input
+                    type="checkbox"
+                    id="hc-insurance"
+                >
+
+
+                <span class="hospital-check-icon">
+
+                    <i class="fa-solid fa-file-shield"></i>
+
+                </span>
+
+
+                <span class="hospital-check-text">
+
+                    <strong>
+                        التأمين أو التغطية
+                    </strong>
+
+                    <small>
+                        إذا كانت مطلوبة أو بتنطبق على زيارتك
+                    </small>
+
+                </span>
+
+
+                <span class="hospital-check-state">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </span>
+
+            </label>
+
+
+
+            <!-- Visit Documents -->
+
+            <label class="check-item hospital-check-item">
+
+                <input
+                    type="checkbox"
+                    id="hc-documents"
+                >
+
+
+                <span class="hospital-check-icon">
+
+                    <i class="fa-regular fa-folder-open"></i>
+
+                </span>
+
+
+                <span class="hospital-check-text">
+
+                    <strong>
+                        وثائق الزيارة
+                    </strong>
+
+                    <small>
+                        التقارير أو الوثائق اللي طُلبت منك للموعد
+                    </small>
+
+                </span>
+
+
+                <span class="hospital-check-state">
+
+                    <i class="fa-solid fa-check"></i>
+
+                </span>
+
+            </label>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             WARNING
+        ================================================== -->
+
+        <div
+            id="hospital-checklist-note"
+            class="hospital-check-warning"
+            style="display: none;"
+            role="alert"
+        >
+
+            <div class="hospital-warning-icon">
+
+                <i class="fa-solid fa-circle-exclamation"></i>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    لسا في أشياء بدك تتأكد منها
+                </strong>
+
+
+                <p id="hospital-missing-items">
+                    تأكد من البنود قبل ما تكمل.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CONTINUE
+        ================================================== -->
+
+        <button
+            type="button"
+            id="hospital-continue"
+            class="primary-btn hospital-continue-final"
+        >
+
+            <span>
+                كل شيء معي، كمل
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+
+
+        <p class="hospital-check-help">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            إذا في بند مش متأكد منه، خليه بدون تحديد
+            واضغط متابعة حتى يذكّرك رفيق فيه.
+
+        </p>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- مهم: accessibility قبل hospital -->
+<script src="js/accessibility.js"></script>
+<script src="js/hospital.js"></script>
+
+
+</body>
+</html>

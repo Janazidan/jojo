@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تجارب المرضى | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/after-visit.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page experiences-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="setup-page experiences-main-final">
+
+    <section class="setup-content experiences-page experiences-container-final">
+
+
+        <!-- Back -->
+
+        <div class="experiences-top-actions">
+
+            <a
+                href="index.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    الصفحة الرئيسية
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LABEL
+        ================================================== -->
+
+        <div class="experiences-page-label">
+
+            <span class="experiences-label-icon">
+                <i class="fa-regular fa-comments"></i>
+            </span>
+
+
+            <div>
+                <span>من ناس سبقوك</span>
+                <strong>تجارب المرضى</strong>
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="experiences-heading">
+
+            <h1>
+                تجارب ناس سبقوك
+            </h1>
+
+            <p>
+                اقرأ تجارب شاركها مرضى ومرافقون مرّوا بالرحلة،
+                واختار المرحلة اللي بدك تعرف عنها.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             IMPORTANT NOTE
+        ================================================== -->
+
+        <div class="experience-info-note experience-info-final">
+
+            <span class="experience-info-icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </span>
+
+
+            <div>
+
+                <strong>
+                    من تجارب المرضى
+                </strong>
+
+                <p>
+                    المحتوى هون تجارب شخصية شاركها المرضى والمرافقون،
+                    وليس تعليمات طبية أو معلومات رسمية.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             FILTERS
+        ================================================== -->
+
+        <div class="experiences-filter-section">
+
+            <div class="experiences-filter-heading">
+
+                <i class="fa-solid fa-filter"></i>
+
+                <span>
+                    شو حاب تعرف عنه؟
+                </span>
+
+            </div>
+
+
+            <div
+                class="experience-filters experience-filters-final"
+                id="experience-filters"
+            >
+
+                <button
+                    type="button"
+                    class="experience-filter active"
+                    data-category="all"
+                >
+                    الكل
+                </button>
+
+                <button
+                    type="button"
+                    class="experience-filter"
+                    data-category="الاستعداد والمتطلبات"
+                >
+                    الاستعداد
+                </button>
+
+                <button
+                    type="button"
+                    class="experience-filter"
+                    data-category="الطريق والوصول"
+                >
+                    الطريق
+                </button>
+
+                <button
+                    type="button"
+                    class="experience-filter"
+                    data-category="داخل المستشفى"
+                >
+                    المستشفى
+                </button>
+
+                <button
+                    type="button"
+                    class="experience-filter"
+                    data-category="العودة"
+                >
+                    العودة
+                </button>
+
+                <button
+                    type="button"
+                    class="experience-filter"
+                    data-category="نصيحة عامة"
+                >
+                    نصائح عامة
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             EXPERIENCES
+        ================================================== -->
+
+        <div
+            id="experiences-list"
+            class="experiences-list experiences-list-final"
+        >
+        </div>
+
+
+
+        <!-- =================================================
+             EMPTY STATE
+        ================================================== -->
+
+        <div
+            id="experiences-empty"
+            class="experiences-empty experiences-empty-final"
+            hidden
+        >
+
+            <span class="experiences-empty-icon">
+                <i class="fa-regular fa-message"></i>
+            </span>
+
+            <h2>
+                لسا ما في تجارب هون
+            </h2>
+
+            <p>
+                أول ما تنضاف تجربة بهاي المرحلة،
+                رح تظهر هون.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             ACTIONS
+        ================================================== -->
+
+        <div class="experiences-help-card">
+
+            <span class="experiences-help-icon">
+                <i class="fa-solid fa-people-group"></i>
+            </span>
+
+
+            <div class="experiences-help-content">
+
+                <strong>
+                    ما لقيت جواب لسؤالك؟
+                </strong>
+
+                <p>
+                    ادخل مجتمع رفيق واسأل ناس مرّوا بتجربة مشابهة.
+                </p>
+
+            </div>
+
+
+            <a
+                href="community.html"
+                class="experiences-community-link"
+            >
+                مجتمع رفيق
+
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+
+
+        <a
+            href="feedback.html"
+            class="primary-btn experiences-share-btn"
+        >
+            <i class="fa-solid fa-microphone"></i>
+
+            <span>
+                شارك تجربتك
+            </span>
+        </a>
+
+
+    </section>
+
+</main>
+
+
+<script src="js/experiences.js"></script>
+<script src="js/accessibility.js"></script>
+
+
+</body>
+</html>

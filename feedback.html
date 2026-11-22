@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>شارك تجربتك | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/after-visit.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page feedback-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="setup-page feedback-final-main">
+
+    <section class="setup-content feedback-page feedback-final-container">
+
+
+        <!-- Back -->
+
+        <div class="feedback-top-actions">
+
+            <a
+                href="completed.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    نهاية الرحلة
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PAGE LABEL
+        ================================================== -->
+
+        <div class="feedback-page-label">
+
+            <span class="feedback-label-icon">
+                <i class="fa-regular fa-heart"></i>
+            </span>
+
+
+            <div>
+                <span>ساعد غيرك</span>
+                <strong>تجربتك</strong>
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="feedback-final-heading">
+
+            <h1>
+                ساعد مريض جاي بعدك
+            </h1>
+
+            <p>
+                شارك شغلة بتتمنى لو كنت تعرفها قبل رحلتك.
+                تجربتك ممكن تسهّل الطريق على شخص بعدك.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CHOOSE METHOD
+        ================================================== -->
+
+        <section
+            id="feedback-method"
+            class="feedback-method feedback-method-final"
+        >
+
+            <div class="feedback-section-heading">
+
+                <span class="feedback-section-number">
+                    1
+                </span>
+
+                <div>
+                    <span>اختار الطريقة الأسهل إلك</span>
+
+                    <h2>
+                        كيف بتحب تشارك تجربتك؟
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="feedback-method-options feedback-method-options-final">
+
+
+                <!-- VOICE -->
+
+                <button
+                    type="button"
+                    id="choose-voice"
+                    class="feedback-method-card feedback-method-card-final"
+                >
+
+                    <span class="feedback-method-icon feedback-method-icon-final">
+                        <i class="fa-solid fa-microphone"></i>
+                    </span>
+
+
+                    <span class="feedback-method-content">
+
+                        <strong>
+                            احكي بصوتك
+                        </strong>
+
+                        <small>
+                            احكي تجربتك بطريقتك، ورفيق برتبها إلك.
+                        </small>
+
+                    </span>
+
+
+                    <span class="feedback-method-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </button>
+
+
+
+                <!-- WRITING -->
+
+                <button
+                    type="button"
+                    id="choose-writing"
+                    class="feedback-method-card feedback-method-card-final"
+                >
+
+                    <span class="feedback-method-icon feedback-method-icon-final writing">
+                        <i class="fa-solid fa-pen"></i>
+                    </span>
+
+
+                    <span class="feedback-method-content">
+
+                        <strong>
+                            اكتب تجربتك
+                        </strong>
+
+                        <small>
+                            اكتبها بطريقتك، حتى لو كانت بسيطة وقصيرة.
+                        </small>
+
+                    </span>
+
+
+                    <span class="feedback-method-arrow">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             VOICE
+        ================================================== -->
+
+        <section
+            id="voice-feedback"
+            class="feedback-input-section feedback-input-final"
+            hidden
+        >
+
+            <button
+                type="button"
+                class="feedback-change-method feedback-change-method-final"
+                data-back-method
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    غيّر طريقة المشاركة
+                </span>
+            </button>
+
+
+            <div class="feedback-box feedback-box-final">
+
+
+                <span class="feedback-big-icon feedback-big-icon-final">
+                    <i class="fa-solid fa-microphone"></i>
+                </span>
+
+
+                <span class="feedback-box-label">
+                    تسجيل صوتي
+                </span>
+
+
+                <h2>
+                    احكي تجربتك
+                </h2>
+
+
+                <p class="feedback-box-description">
+                    احكيلنا شو واجهت، وشو الشغلة اللي ممكن
+                    تساعد مريض يمر بنفس الرحلة بعدك.
+                </p>
+
+
+
+                <!-- Recording status -->
+
+                <div class="feedback-recording-panel">
+
+                    <div
+                        id="recording-status"
+                        class="recording-status"
+                        aria-live="polite"
+                    >
+                        جاهز للتسجيل
+                    </div>
+
+
+                    <div
+                        id="recording-time"
+                        class="recording-time"
+                    >
+                        00:00
+                    </div>
+
+                </div>
+
+
+
+                <!--
+                    مهم:
+                    لا نضع icon داخل هذا الزر لأن feedback.js
+                    يغيّر textContent أثناء التسجيل.
+                -->
+
+                <button
+                    type="button"
+                    id="record-button"
+                    class="primary-btn feedback-main-btn feedback-record-btn"
+                >
+                    ابدأ التسجيل
+                </button>
+
+
+
+                <!-- Recording preview -->
+
+                <div
+                    id="recording-preview"
+                    class="recording-preview recording-preview-final"
+                    hidden
+                >
+
+                    <div class="recording-ready-heading">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <strong>
+                            التسجيل جاهز
+                        </strong>
+
+                    </div>
+
+
+                    <p>
+                        اسمع تسجيلك قبل ما نكمل.
+                    </p>
+
+
+                    <audio
+                        id="feedback-audio"
+                        controls
+                    ></audio>
+
+
+                    <button
+                        type="button"
+                        id="analyze-voice"
+                        class="primary-btn feedback-main-btn feedback-analyze-btn"
+                    >
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        <span>
+                            رتّب تجربتي
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="record-again"
+                        class="secondary-btn feedback-secondary-action"
+                    >
+                        <i class="fa-solid fa-rotate-left"></i>
+
+                        <span>
+                            سجل من جديد
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <div class="feedback-microphone-note">
+
+                    <i class="fa-solid fa-microphone-lines"></i>
+
+                    <span>
+                        المتصفح رح يطلب إذنك لاستخدام الميكروفون.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             WRITING
+        ================================================== -->
+
+        <section
+            id="writing-feedback"
+            class="feedback-input-section feedback-input-final"
+            hidden
+        >
+
+            <button
+                type="button"
+                class="feedback-change-method feedback-change-method-final"
+                data-back-method
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    غيّر طريقة المشاركة
+                </span>
+            </button>
+
+
+            <div class="feedback-box feedback-box-final">
+
+
+                <span class="feedback-big-icon feedback-big-icon-final writing">
+                    <i class="fa-solid fa-pen"></i>
+                </span>
+
+
+                <span class="feedback-box-label">
+                    كتابة
+                </span>
+
+
+                <h2>
+                    اكتب تجربتك
+                </h2>
+
+
+                <p class="feedback-box-description">
+                    شو في شغلة بتتمنى لو كنت تعرفها قبل رحلتك؟
+                    اكتب بطريقتك، مش لازم ترتب الكلام.
+                </p>
+
+
+                <label
+                    for="feedback-text"
+                    class="feedback-text-label"
+                >
+                    تجربتك
+                </label>
+
+
+                <textarea
+                    id="feedback-text"
+                    rows="7"
+                    placeholder="مثال: لما وصلت ما كنت عارف وين أروح..."
+                ></textarea>
+
+
+                <p
+                    id="feedback-error"
+                    class="feedback-error"
+                    aria-live="polite"
+                ></p>
+
+
+                <button
+                    type="button"
+                    id="analyze-text"
+                    class="primary-btn feedback-main-btn feedback-analyze-btn"
+                >
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                    <span>
+                        رتّب تجربتي
+                    </span>
+                </button>
+
+
+                <div class="feedback-ai-note">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    <span>
+                        رفيق برتب كلامك ويلخصه، وبعدها إنت بتراجعه قبل المشاركة.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             AI LOADING
+        ================================================== -->
+
+        <section
+            id="feedback-loading"
+            class="feedback-loading feedback-loading-final"
+            hidden
+        >
+
+            <div class="feedback-box feedback-box-final feedback-ai-loading-box">
+
+
+                <span class="feedback-ai-icon feedback-ai-icon-final">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </span>
+
+
+                <h2>
+                    رفيق برتّب تجربتك...
+                </h2>
+
+
+                <p>
+                    بنلخص كلامك ونحطه بالمكان المناسب.
+                </p>
+
+
+                <div
+                    class="feedback-loader"
+                    aria-label="جاري التحميل"
+                ></div>
+
+
+                <span class="feedback-loading-note">
+                    لحظة بس
+                </span>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             AI REVIEW
+        ================================================== -->
+
+        <section
+            id="feedback-review"
+            class="feedback-review feedback-review-final"
+            hidden
+        >
+
+            <div class="feedback-box feedback-box-final">
+
+
+                <div class="feedback-review-top">
+
+                    <span class="feedback-ai-icon feedback-review-ai-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </span>
+
+
+                    <div>
+
+                        <span class="feedback-ai-label">
+                            رتّبها رفيق
+                        </span>
+
+                        <h2>
+                            هيك فهمنا تجربتك
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="feedback-review-description">
+                    اقرأها وتأكد إنها بتحكي تجربتك صح قبل المشاركة.
+                </p>
+
+
+
+                <!-- Summary -->
+
+                <div class="feedback-summary-box feedback-summary-final">
+
+                    <div class="feedback-result-label">
+
+                        <i class="fa-regular fa-message"></i>
+
+                        <span>
+                            ملخص تجربتك
+                        </span>
+
+                    </div>
+
+
+                    <p id="feedback-summary"></p>
+
+                </div>
+
+
+
+                <!-- Category -->
+
+                <div class="feedback-category-box feedback-category-final">
+
+                    <span>
+                        التصنيف
+                    </span>
+
+                    <strong id="feedback-category"></strong>
+
+                </div>
+
+
+
+                <!-- Original -->
+
+                <details class="feedback-original feedback-original-final">
+
+                    <summary>
+
+                        <span>
+                            عرض كلامي الأصلي
+                        </span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </summary>
+
+
+                    <p id="feedback-original-text"></p>
+
+                </details>
+
+
+
+                <!-- Actions -->
+
+                <div class="feedback-review-actions feedback-review-actions-final">
+
+                    <button
+                        type="button"
+                        id="edit-feedback"
+                        class="secondary-btn feedback-review-edit"
+                    >
+                        <i class="fa-solid fa-pen"></i>
+
+                        <span>
+                            تعديل
+                        </span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="publish-feedback"
+                        class="primary-btn feedback-review-publish"
+                    >
+                        <i class="fa-solid fa-check"></i>
+
+                        <span>
+                            موافق ومشاركة
+                        </span>
+                    </button>
+
+                </div>
+
+
+                <div class="feedback-review-reminder">
+
+                    <i class="fa-solid fa-user-check"></i>
+
+                    <span>
+                        التجربة ما بتنضاف إلا بعد موافقتك.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SUCCESS
+        ================================================== -->
+
+        <section
+            id="feedback-success"
+            class="feedback-success-section feedback-success-final"
+            hidden
+        >
+
+            <div class="feedback-box feedback-success-box feedback-success-box-final">
+
+
+                <span class="feedback-success-icon feedback-success-icon-final">
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+
+                <span class="feedback-success-label">
+                    تمت المشاركة
+                </span>
+
+
+                <h2>
+                    شكرًا إلك
+                </h2>
+
+
+                <p>
+                    تجربتك ممكن تساعد مريض يمر بنفس الطريق بعدك.
+                </p>
+
+
+                <a
+                    href="experiences.html"
+                    class="primary-btn feedback-main-btn feedback-success-primary"
+                >
+                    <i class="fa-regular fa-comments"></i>
+
+                    <span>
+                        شوف تجارب ناس سبقوك
+                    </span>
+                </a>
+
+
+                <a
+                    href="community.html"
+                    class="secondary-btn feedback-success-secondary"
+                >
+                    <i class="fa-solid fa-people-group"></i>
+
+                    <span>
+                        مجتمع رفيق
+                    </span>
+                </a>
+
+
+                <a
+                    href="completed.html"
+                    class="feedback-finish-link"
+                >
+                    العودة لنهاية الرحلة
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PRIVACY
+        ================================================== -->
+
+        <div
+            id="feedback-privacy"
+            class="feedback-privacy feedback-privacy-final"
+        >
+
+            <span class="feedback-privacy-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </span>
+
+
+            <div>
+
+                <strong>
+                    حافظ على خصوصيتك
+                </strong>
+
+                <p>
+                    لا تشارك رقم هويتك، تصريحك،
+                    تقاريرك الطبية أو معلومات شخصية حساسة.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="js/feedback.js"></script>
+<script src="js/accessibility.js"></script>
+
+
+</body>
+</html>

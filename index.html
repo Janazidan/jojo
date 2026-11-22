@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>رفيق | رحلتك للعلاج في القدس</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body class="rafiq-home">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="rafiq-header">
+
+    <a
+        href="index.html"
+        class="rafiq-brand"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+        >
+    </a>
+
+
+    <nav class="rafiq-nav">
+
+        <a
+            href="index.html"
+            class="nav-item active"
+        >
+            <i class="fa-solid fa-house"></i>
+            <span>الصفحة الرئيسية</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="nav-item"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات قريبة</span>
+        </a>
+
+
+        <a
+            href="experiences.html"
+            class="nav-item"
+        >
+            <i class="fa-solid fa-user-group"></i>
+            <span>تجارب المرضى</span>
+        </a>
+
+
+        <a
+            href="community.html"
+            class="nav-item"
+        >
+            <i class="fa-solid fa-people-group"></i>
+            <span>مجتمع رفيق</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="nav-item"
+        >
+            <i class="fa-regular fa-circle-question"></i>
+            <span>مساعدة</span>
+        </a>
+
+    </nav>
+
+
+    <div class="rafiq-accessibility">
+
+        <button
+            class="header-tool sound-btn"
+            type="button"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="header-tool"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة لافتة</span>
+        </a>
+
+
+        <div class="font-tools">
+            <!-- accessibility.js سيضيف أدوات الخط -->
+        </div>
+
+    </div>
+
+
+    <button
+        class="mobile-menu-button"
+        id="mobile-menu-button"
+        type="button"
+        aria-label="فتح القائمة"
+    >
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div
+    class="mobile-menu"
+    id="mobile-menu"
+>
+
+    <a href="services.html">
+        <i class="fa-solid fa-location-dot"></i>
+        خدمات قريبة
+    </a>
+
+
+    <a href="food.html">
+        <i class="fa-solid fa-utensils"></i>
+        أكل ومشروبات
+    </a>
+
+
+    <a href="stay.html">
+        <i class="fa-solid fa-bed"></i>
+        أماكن مبيت
+    </a>
+
+
+    <a href="experiences.html">
+        <i class="fa-solid fa-user-group"></i>
+        تجارب المرضى
+    </a>
+
+
+    <a href="community.html">
+        <i class="fa-solid fa-people-group"></i>
+        مجتمع رفيق
+    </a>
+
+
+    <a href="problem.html#translation-section">
+        <i class="fa-solid fa-camera"></i>
+        ترجمة لافتة
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="rafiq-hero">
+
+
+    <!-- =================================================
+         HERO TEXT
+    ================================================== -->
+
+    <div class="hero-copy">
+
+
+        <div class="hero-small-label">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <span>
+                معك خطوة بخطوة
+            </span>
+
+        </div>
+
+
+        <h1>
+            رفيقك في رحلتك
+            <span>
+                للعلاج في القدس
+            </span>
+        </h1>
+
+
+        <p>
+            من الاستعداد للرحلة، للطريق والمستشفى،
+            <br>
+            وحتى انتهاء زيارتك.
+        </p>
+
+
+
+        <!-- =============================================
+             HERO ACTIONS
+        ============================================== -->
+
+        <div class="hero-actions">
+
+
+            <button
+                type="button"
+                class="hero-primary"
+onclick="openJourneyLogin()"            >
+
+                <i class="fa-solid fa-route"></i>
+
+                <span>
+                    ابدأ رحلة جديدة
+                </span>
+
+            </button>
+
+
+
+            <button
+                id="resume-journey"
+                class="hero-secondary"
+                type="button"
+            >
+
+                <i class="fa-solid fa-arrow-rotate-left"></i>
+
+                <span>
+                    أكمل رحلتي
+                </span>
+
+            </button>
+
+
+        </div>
+        <!-- =========================================
+     BEFORE JOURNEY GUIDANCE
+========================================= -->
+
+<div class="before-journey-help">
+    <div class="before-help-icon">
+        <i class="fa-solid fa-circle-question"></i>
+    </div>
+
+    <div class="before-help-text">
+        <h3>مش جاهز تبدأ رحلتك؟</h3>
+        <p>
+            ما معك تحويلة طبية أو تصريح؟
+            اعرف شو الخطوات اللي لازم تعملها أولًا.
+        </p>
+    </div>
+
+    <button type="button" onclick="openPreparationGuide()">
+        اعرف شو تعمل
+        <i class="fa-solid fa-arrow-left"></i>
+    </button>
+</div>
+
+
+
+        <p
+            id="resume-message"
+            class="resume-message"
+        ></p>
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         HERO ART
+    ================================================== -->
+
+    <div class="hero-art">
+
+        <div class="hero-art-glow"></div>
+
+
+        <img
+            src="assets/icon.png"
+            alt="رفيق في رحلة العلاج"
+        >
+
+
+        <div class="hero-art-text">
+
+            مشوارك أسهل
+
+            <strong>
+                مع رفيق
+            </strong>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     QUICK SERVICES
+===================================================== -->
+
+<section class="quick-services">
+
+
+    <div class="services-heading">
+
+        <h2>
+            شو بتحتاج هسا؟
+        </h2>
+
+        <p>
+            الخدمات المهمة موجودة معك بأي وقت.
+        </p>
+
+    </div>
+
+
+
+    <div class="services-grid">
+
+
+        <!-- FOOD -->
+
+        <a
+            href="food.html"
+            class="service-card"
+        >
+
+            <div class="service-icon olive">
+                <i class="fa-solid fa-utensils"></i>
+            </div>
+
+
+            <div class="service-info">
+
+                <h3>
+                    أكل ومشروبات قريبة
+                </h3>
+
+                <p>
+                    مطاعم وكافيهات مناسبة وقريبة منك
+                </p>
+
+                <span>
+                    ابحث الآن
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- STAY -->
+
+        <a
+            href="stay.html"
+            class="service-card"
+        >
+
+            <div class="service-icon taupe">
+                <i class="fa-solid fa-bed"></i>
+            </div>
+
+
+            <div class="service-info">
+
+                <h3>
+                    أماكن مبيت قريبة
+                </h3>
+
+                <p>
+                    أماكن مبيت حسب موقعك
+                </p>
+
+                <span>
+                    ابحث الآن
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- EXPERIENCES -->
+
+        <a
+            href="experiences.html"
+            class="service-card"
+        >
+
+            <div class="service-icon burgundy">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+
+
+            <div class="service-info">
+
+                <h3>
+                    تجارب ناس سبقوك
+                </h3>
+
+                <p>
+                    شوف تجارب مرضى ومرافقين مرّوا قبلك
+                </p>
+
+                <span>
+                    اقرأ التجارب
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </div>
+
+        </a>
+
+
+
+        <!-- TRANSLATION -->
+
+        <a
+            href="problem.html#translation-section"
+            class="service-card"
+        >
+
+            <div class="service-icon olive">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+
+
+            <div class="service-info">
+
+                <h3>
+                    ترجم لافتة
+                </h3>
+
+                <p>
+                    صوّر النص وخليه بالعربي
+                </p>
+
+                <span>
+                    ابدأ الترجمة
+                    <i class="fa-solid fa-arrow-left"></i>
+                </span>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST STRIP
+===================================================== -->
+
+<section class="home-trust">
+
+
+    <div class="trust-item">
+
+        <i class="fa-regular fa-heart"></i>
+
+        <div>
+
+            <strong>
+                مصمم لأجلك
+            </strong>
+
+            <span>
+                واجهة بسيطة وسهلة الاستخدام
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="trust-divider"></div>
+
+
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-people-group"></i>
+
+        <div>
+
+            <strong>
+                مجتمع داعم
+            </strong>
+
+            <span>
+                تجارب ومساعدة من ناس سبقوك
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="trust-divider"></div>
+
+
+
+    <div class="trust-item">
+
+        <i class="fa-regular fa-circle-check"></i>
+
+        <div>
+
+            <strong>
+                المعلومة واضحة
+            </strong>
+
+            <span>
+                نميّز بين المعلومات وتجارب المرضى
+            </span>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/accessibility.js"></script>
+
+
+<script>
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+const menuButton =
+    document.getElementById("mobile-menu-button");
+
+const mobileMenu =
+    document.getElementById("mobile-menu");
+
+
+if (menuButton && mobileMenu) {
+
+    menuButton.addEventListener(
+        "click",
+        function () {
+
+            mobileMenu.classList.toggle("open");
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   RESUME JOURNEY
+===================================================== */
+
+const resumeButton =
+    document.getElementById("resume-journey");
+
+const resumeMessage =
+    document.getElementById("resume-message");
+
+
+if (resumeButton) {
+
+    resumeButton.addEventListener(
+        "click",
+        function () {
+
+
+            const savedPage =
+                localStorage.getItem(
+                    "rafiqCurrentPage"
+                );
+
+
+            if (savedPage) {
+
+                window.location.href =
+                    savedPage;
+
+                return;
+
+            }
+
+
+            const hospital =
+                localStorage.getItem(
+                    "selectedHospital"
+                );
+
+
+            const appointment =
+                localStorage.getItem(
+                    "appointmentDate"
+                );
+
+
+            if (hospital || appointment) {
+
+                window.location.href =
+                    "checklist.html";
+
+                return;
+
+            }
+
+
+            resumeMessage.textContent =
+                "ما في رحلة محفوظة على هذا الجهاز حالياً.";
+
+        }
+    );
+
+}
+
+</script>
+
+<!-- =============================================
+     START JOURNEY LOGIN MODAL
+============================================== -->
+<div id="journey-login-modal" class="journey-login-modal" aria-hidden="true">
+
+    <div class="journey-login-box">
+
+        <button
+            type="button"
+            class="journey-login-close"
+            onclick="closeJourneyLogin()"
+            aria-label="إغلاق"
+        >
+            ×
+        </button>
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="journey-login-logo"
+        >
+
+        <h2>أهلًا في رفيق</h2>
+
+        <p>
+            أدخل رقم الموبايل لنبدأ رحلتك
+        </p>
+
+        <label for="journey-phone">
+            رقم الموبايل
+        </label>
+
+        <div class="journey-phone-field">
+            <i class="fa-solid fa-phone"></i>
+
+            <input
+                id="journey-phone"
+                type="tel"
+                inputmode="numeric"
+                placeholder="05X XXX XXXX"
+                maxlength="10"
+                autocomplete="tel"
+            >
+        </div>
+
+        <p id="journey-phone-error" class="journey-phone-error"></p>
+
+        <button
+            type="button"
+            class="journey-login-continue"
+            onclick="continueNewJourney()"
+        >
+            متابعة
+            <i class="fa-solid fa-arrow-left"></i>
+        </button>
+
+        <span class="journey-login-note">
+            رح نستخدم الرقم فقط لحفظ رحلتك في هذا النموذج.
+        </span>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+<!-- =========================================
+     PREPARATION GUIDE MODAL
+========================================= -->
+
+<dialog id="preparation-guide" class="preparation-guide">
+
+    <button
+        type="button"
+        class="guide-close"
+        onclick="closePreparationGuide()"
+        aria-label="إغلاق"
+    >
+        ×
+    </button>
+
+    <!-- MAIN VIEW -->
+    <div id="guide-main">
+
+        <div class="guide-heading">
+            <div class="guide-heading-icon">
+                <i class="fa-solid fa-compass"></i>
+            </div>
+
+            <h2>شو ناقصك قبل الرحلة؟</h2>
+
+            <p>
+                اختار حالتك، ورفيق بوضحلك من وين تبدأ.
+            </p>
+        </div>
+
+        <button
+            type="button"
+            class="guide-option"
+            onclick="showReferralGuide()"
+        >
+            <span class="guide-option-icon">
+                <i class="fa-solid fa-file-medical"></i>
+            </span>
+
+            <span>
+                <strong>ما معي تحويلة طبية</strong>
+                <small>اعرف خطوات التحويل وشراء الخدمة</small>
+            </span>
+
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <button
+            type="button"
+            class="guide-option"
+            onclick="showPermitGuide()"
+        >
+            <span class="guide-option-icon">
+                <i class="fa-solid fa-id-card"></i>
+            </span>
+
+            <span>
+                <strong>عندي تحويلة، بس ما معي تصريح</strong>
+                <small>اعرف شو تعمل قبل رحلتك</small>
+            </span>
+
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+    </div>
+
+
+  <!-- =========================================
+     MEDICAL REFERRAL GUIDE
+========================================= -->
+<div id="guide-referral" class="guide-section">
+
+    <button
+        type="button"
+        class="guide-back"
+        onclick="showGuideMain()"
+    >
+        <i class="fa-solid fa-arrow-right"></i>
+        رجوع
+    </button>
+
+    <h2>ما معك تحويلة طبية؟</h2>
+
+    <p class="guide-intro">
+        إذا العلاج المطلوب مش متوفر في مستشفيات وزارة الصحة،
+        البداية بتكون من <strong>طبيبك في المستشفى الحكومي</strong>،
+        مش من مكتب التحويلات مباشرة.
+    </p>
+
+    <div class="guide-steps">
+
+        <!-- STEP 1 -->
+        <div class="guide-step">
+            <span>1</span>
+
+            <div>
+                <strong>راجع طبيبك في المستشفى الحكومي</strong>
+
+                <p>
+                    الطبيب المشرف بقييم حالتك، وإذا كنت بحاجة
+                    لخدمة غير متوفرة، برفع طلب التحويل.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- STEP 2 -->
+        <div class="guide-step">
+            <span>2</span>
+
+            <div>
+                <strong>تأكد من التأمين الصحي</strong>
+
+                <p>
+                    تأكد إن تأمينك الصحي ساري عند اتخاذ
+                    قرار التحويل.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- STEP 3 -->
+        <div class="guide-step">
+            <span>3</span>
+
+            <div>
+                <strong>الطلب بيمر على اللجان المختصة</strong>
+
+                <p>
+                    بيتم تقييم طلب التحويل والحاجة للعلاج
+                    خارج مرافق وزارة الصحة.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- STEP 4 -->
+        <div class="guide-step">
+            <span>4</span>
+
+            <div>
+                <strong>شراء الخدمة بتكمل الإجراء</strong>
+
+                <p>
+                    بعد الموافقة، بتتم إجراءات إصدار التحويلة
+                    وتحديد جهة العلاج المعتمدة.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- IMPORTANT INFO -->
+    <div class="guide-warning">
+        <i class="fa-solid fa-circle-check"></i>
+
+        <p>
+            <strong>معلومة مهمة:</strong><br>
+            إصدار التحويلة الطبية لا يتطلب دفع رسوم،
+            وبعد إصدارها بتقدر تتابع مسارها وإجراءاتها.
+        </p>
+    </div>
+
+
+    <!-- CONTACT -->
+    <div class="referral-contact-box">
+
+        <div class="referral-contact-icon">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div>
+            <strong>بدك تستفسر عن تحويلتك؟</strong>
+
+            <p>
+                وحدة شراء الخدمة<br>
+                وزارة الصحة الفلسطينية
+            </p>
+
+            <div class="referral-phone">
+                <i class="fa-solid fa-phone"></i>
+                <span dir="ltr">02-2401469</span>
+            </div>
+
+            <div class="referral-phone">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span dir="ltr">056-2401652</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <p class="referral-disclaimer">
+        رفيق بيساعدك تفهم الخطوات، لكنه لا يصدر التحويلة
+        ولا يمثل وزارة الصحة.
+    </p>
+
+</div>
+
+        <div class="guide-warning">
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>
+                رفيق يساعدك تفهم الخطوات، لكنه لا يصدر التحويلة
+                ولا يمثل وزارة الصحة.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- PERMIT -->
+    <div id="guide-permit" class="guide-section">
+
+        <button
+            type="button"
+            class="guide-back"
+            onclick="showGuideMain()"
+        >
+            <i class="fa-solid fa-arrow-right"></i>
+            رجوع
+        </button>
+
+        <h2>عندك تحويلة، بس ما معك تصريح؟</h2>
+
+        <p class="guide-intro">
+            التحويلة الطبية وتصريح الدخول مش نفس الإجراء.
+            إذا رحلتك بتحتاج تصريح، تأكد من حالة طلبك قبل الانطلاق.
+        </p>
+
+        <div class="permit-reminder">
+
+            <i class="fa-solid fa-shield-heart"></i>
+
+            <div>
+                <strong>قبل ما تبدأ الرحلة</strong>
+
+                <p>
+                    تابع حالة التصريح من خلال الجهة المختصة
+                    بمتابعة حالتك، وتأكد كمان من وضع تصريح المرافق
+                    إذا كان معك مرافق.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="guide-warning">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+
+            <p>
+                وجود تحويلة أو موعد طبي لا يعني تلقائيًا وجود
+                تصريح دخول. تحقق من حالة رحلتك قبل الانطلاق.
+            </p>
+        </div>
+
+    </div>
+
+</dialog>
+
+</body>
+</html>

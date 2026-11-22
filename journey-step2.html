@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>متابعة الطريق | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/journey.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page journey-final-page journey-guide-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="journey-page journey-page-final">
+
+    <section class="journey-container journey-container-final">
+
+
+        <!-- =================================================
+             TOP
+        ================================================== -->
+
+        <div class="journey-top-actions">
+
+            <a
+                href="journey.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    نقطة البداية
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+                <i class="fa-solid fa-route"></i>
+            </div>
+
+
+            <div>
+                <span>المرحلة الثانية</span>
+                <strong>الطريق والوصول</strong>
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="journey-heading journey-guide-heading">
+
+            <h1>
+                كمل رحلتك
+            </h1>
+
+            <p>
+                ركّز بس على الخطوة اللي قدامك.
+                لما توصلها، رفيق بعطيك الخطوة اللي بعدها.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <div
+            class="progress progress-accessible"
+            aria-label="مراحل الرحلة"
+        >
+
+            <div class="progress-step completed">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>الاستعداد</p>
+
+            </div>
+
+
+            <div class="progress-step active">
+
+                <span>2</span>
+
+                <p>الطريق</p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>3</span>
+
+                <p>المستشفى</p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>4</span>
+
+                <p>بعد الزيارة</p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             CURRENT LOCATION
+        ================================================== -->
+
+        <div class="journey-current-card">
+
+            <div class="journey-current-icon">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+            </div>
+
+
+            <div class="journey-current-content">
+
+                <span class="card-label">
+                    أنت هسا
+                </span>
+
+                <h2 id="current-location">
+                    جاري تحديد خطوتك...
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             NEXT ACTION
+        ================================================== -->
+
+        <div class="journey-next-action-card">
+
+
+            <div class="journey-next-top">
+
+                <div class="journey-next-icon">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                </div>
+
+
+                <div>
+
+                    <span class="card-label">
+                        اعمل هسا
+                    </span>
+
+                    <h2 id="next-step-title">
+                        جاري تجهيز الخطوة التالية...
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <p
+                id="next-step-desc"
+                class="journey-next-description"
+            ></p>
+
+
+
+            <!-- Previous route step -->
+
+            <button
+                type="button"
+                id="journey-back-btn"
+                class="journey-previous-step-btn"
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    الخطوة السابقة
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MAIN ACTION
+        ================================================== -->
+
+        <button
+            type="button"
+            id="journey-continue-btn"
+            class="primary-btn journey-main-btn journey-arrived-btn"
+        >
+
+            <i class="fa-solid fa-check"></i>
+
+            <span>
+                وصلت، أعطيني الخطوة التالية
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             SPECIAL FALLBACK
+             JS controls when it appears
+        ================================================== -->
+
+        <button
+            type="button"
+            id="no-ford-btn"
+            class="journey-fallback-btn"
+            style="display: none;"
+        >
+
+            <i class="fa-solid fa-circle-question"></i>
+
+            <span>
+                ما لقيت فورد
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             PROBLEM
+        ================================================== -->
+
+        <a
+            href="problem.html"
+            class="journey-problem-help"
+        >
+
+            <span class="journey-problem-icon">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+            </span>
+
+
+            <span class="journey-problem-text">
+
+                <strong>
+                    واجهت مشكلة؟
+                </strong>
+
+                <small>
+                    ضيّعت الطريق أو محتاج ترجمة
+                </small>
+
+            </span>
+
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="js/journey.js"></script>
+<script src="js/accessibility.js"></script>
+
+
+<script>
+
+    /*
+       هذه صفحة أساسية داخل الرحلة،
+       لذلك نحفظها لزر "أكمل رحلتي"
+    */
+
+    localStorage.setItem(
+        "rafiqCurrentPage",
+        "journey-step2.html"
+    );
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>المبيت والإقامة | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/journey.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+</head>
+
+
+<body class="inner-page nearby-service-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn active-header-tool"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="journey-page nearby-service-main">
+
+    <section class="journey-container nearby-service-container">
+
+
+        <!-- Back -->
+
+        <div class="services-top-actions">
+
+            <a
+                href="services.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    الخدمات القريبة
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LABEL
+        ================================================== -->
+
+        <div class="services-page-label">
+
+            <span class="services-label-icon">
+
+                <i class="fa-solid fa-bed"></i>
+
+            </span>
+
+
+            <div>
+
+                <span>
+                    خدمات قريبة
+                </span>
+
+                <strong>
+                    المبيت والإقامة
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="services-heading nearby-heading">
+
+            <h1>
+                أماكن إقامة قريبة
+            </h1>
+
+            <p>
+                حدد موقعك، ورفيق ببحث عن أماكن الإقامة الموجودة حواليك.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LOCATION CARD
+        ================================================== -->
+
+        <div class="nearby-location-card">
+
+            <span class="nearby-location-icon">
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+
+            </span>
+
+
+            <div class="nearby-location-content">
+
+                <span class="card-label">
+                    موقعك
+                </span>
+
+                <h2>
+                    وين أنت هسا؟
+                </h2>
+
+                <p>
+                    اضغط الزر واسمح لرفيق يستخدم موقعك
+                    حتى نبحث عن الأماكن القريبة.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LOCATION BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            id="nearby-location-btn"
+            class="primary-btn journey-main-btn nearby-location-main-btn"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+                تحديد موقعي
+            </span>
+
+        </button>
+
+
+
+        <div
+            id="nearby-location-status"
+            class="location-status nearby-location-status"
+            aria-live="polite"
+        ></div>
+
+
+
+        <!-- =================================================
+             MAP
+        ================================================== -->
+
+        <div
+            id="nearby-map"
+            class="nearby-map nearby-map-final"
+            aria-label="خريطة أماكن الإقامة القريبة"
+        ></div>
+
+
+
+        <!-- =================================================
+             LOADING
+        ================================================== -->
+
+        <div
+            id="nearby-loading"
+            class="nearby-loading nearby-loading-final"
+        >
+
+            <div class="nearby-loading-card">
+
+                <span class="nearby-loading-icon">
+
+                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                </span>
+
+
+                <div>
+
+                    <strong>
+                        بنبحث حواليك...
+                    </strong>
+
+                    <p>
+                        لحظة بس، بنشوف أقرب الخيارات.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RESULTS
+        ================================================== -->
+
+        <div
+            id="nearby-results"
+            class="nearby-results nearby-results-final"
+        >
+
+            <div class="nearby-results-card">
+
+                <div class="nearby-results-heading">
+
+                    <span class="nearby-results-icon">
+
+                        <i class="fa-solid fa-bed"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <span class="card-label">
+                            الأقرب إلك
+                        </span>
+
+                        <h2>
+                            أماكن إقامة قريبة
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div id="nearby-places"></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             NOTE
+        ================================================== -->
+
+        <div class="nearby-data-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                النتائج بتعتمد على الأماكن المتاحة في بيانات الخريطة،
+                لذلك ممكن بعض المعلومات تتغير.
+            </span>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script
+    src="js/nearby-services.js"
+    data-service="stay">
+</script>
+
+<script src="js/accessibility.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>مساعدة | رفيق</title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/journey.css"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+</head>
+
+
+<body class="inner-page problem-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+
+    </a>
+
+
+    <div class="header-tools">
+
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <span>
+                الصوت
+            </span>
+
+        </button>
+
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+
+            <i class="fa-solid fa-camera"></i>
+
+            <span>
+                ترجمة
+            </span>
+
+        </a>
+
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+                خدمات
+            </span>
+
+        </a>
+
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="journey-page problem-page-final">
+
+    <section class="journey-container problem-container-final">
+
+
+        <!-- =================================================
+             TOP
+        ================================================== -->
+
+        <div class="problem-top-actions">
+
+       <a
+    href="index.html"
+    class="clear-back-link"
+    data-smart-back
+>
+    <i class="fa-solid fa-arrow-right"></i>
+
+    <span>
+        رجوع
+    </span>
+</a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LABEL
+        ================================================== -->
+
+        <div class="problem-page-label">
+
+            <span class="problem-label-icon">
+
+                <i class="fa-solid fa-hand-holding-heart"></i>
+
+            </span>
+
+
+            <div>
+
+                <span>
+                    رفيق معك
+                </span>
+
+                <strong>
+                    مساعدة
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="problem-heading-final">
+
+            <h1>
+                واجهت مشكلة؟
+            </h1>
+
+            <p>
+                اختار شو اللي صار معك،
+                ورفيق بساعدك بالخطوة التالية.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROBLEM OPTIONS
+        ================================================== -->
+
+        <section
+            id="problem-section"
+            class="problem-options-section"
+        >
+
+            <div class="problem-options-final">
+
+
+                <!-- LOST -->
+
+                <button
+                    type="button"
+                    class="problem-option problem-option-final"
+                    data-problem="lost"
+                >
+
+                    <span class="problem-option-icon">
+
+                        <i class="fa-solid fa-location-crosshairs"></i>
+
+                    </span>
+
+
+                    <span class="problem-option-content">
+
+                        <strong>
+                            مش عارف وين أنا
+                        </strong>
+
+                        <small>
+                            حدد موقعك وشوف الأماكن القريبة منك
+                        </small>
+
+                    </span>
+
+
+                    <span class="problem-option-arrow">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </span>
+
+                </button>
+
+
+
+                <!-- LANGUAGE -->
+
+                <button
+                    type="button"
+                    class="problem-option problem-option-final"
+                    data-problem="language"
+                >
+
+                    <span class="problem-option-icon translation">
+
+                        <i class="fa-solid fa-camera"></i>
+
+                    </span>
+
+
+                    <span class="problem-option-content">
+
+                        <strong>
+                            مش فاهم اللافتة
+                        </strong>
+
+                        <small>
+                            صوّر اللافتة ورفيق بساعدك تفهمها
+                        </small>
+
+                    </span>
+
+
+                    <span class="problem-option-arrow">
+
+                        <i class="fa-solid fa-arrow-left"></i>
+
+                    </span>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             LOCATION
+        ================================================== -->
+
+        <section
+            id="location-section"
+            class="problem-tool-section"
+            hidden
+        >
+
+
+            <button
+                type="button"
+                class="problem-change-option"
+                data-problem-back
+            >
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    اختار مشكلة ثانية
+                </span>
+
+            </button>
+
+            <div class="problem-tool-card">
+
+
+                <div class="problem-tool-heading">
+
+                    <span class="problem-tool-icon">
+
+                        <i class="fa-solid fa-location-crosshairs"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <span class="card-label">
+                            موقعك
+                        </span>
+
+                        <h2>
+                            خلينا نعرف وين إنت
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <p class="problem-tool-description">
+                    بعد ما تسمح باستخدام موقعك،
+                    رفيق بعرضلك موقعك وبعض الأماكن القريبة منك.
+                </p>
+
+
+
+                <button
+                    type="button"
+                    id="location-btn"
+                    class="primary-btn journey-main-btn problem-primary-action"
+                >
+
+                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                    <span>
+                        تحديد موقعي
+                    </span>
+
+                </button>
+
+
+
+                <p
+                    id="location-status"
+                    class="problem-status"
+                    aria-live="polite"
+                ></p>
+
+
+
+                <div
+                    id="map"
+                    class="problem-map-final"
+                ></div>
+
+
+
+                <!-- Loading -->
+
+                <div
+                    id="nearby-loading"
+                    class="problem-loading-final"
+                >
+
+                    <span class="problem-loading-icon">
+
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            بنبحث حواليك...
+                        </strong>
+
+                        <span>
+                            لحظة بس
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Nearby -->
+
+                <div
+                    id="nearby-section"
+                    class="problem-nearby-final"
+                >
+
+                    <div class="problem-nearby-heading">
+
+                        <span>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                        </span>
+
+
+                        <div>
+
+                            <small>
+                                الأماكن القريبة
+                            </small>
+
+                            <h3>
+                                شو موجود حواليك؟
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="nearby-places"></div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             TRANSLATION ANCHOR
+
+             الرابط من الهيدر يذهب إلى هذا الـ ID.
+             أما problem.js فيبقى يعتمد على language-section.
+        ================================================== -->
+
+        <div id="translation-section"></div>
+
+
+        <!-- =================================================
+             LANGUAGE / TRANSLATION
+        ================================================== -->
+
+  <section
+    id="language-section"
+    class="problem-tool-section translation-tool-section"
+    hidden
+>
+
+    <button
+        type="button"
+        class="problem-change-option"
+        data-problem-back
+    >
+        <i class="fa-solid fa-arrow-right"></i>
+
+        <span>
+            اختار مشكلة ثانية
+        </span>
+    </button>
+
+
+    <!-- اختيار نوع الترجمة -->
+
+    <div class="translation-mode-switch">
+
+        <button
+            type="button"
+            class="translation-mode-btn active"
+            id="image-translation-tab"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة صورة</span>
+        </button>
+
+        <button
+            type="button"
+            class="translation-mode-btn"
+            id="voice-translation-tab"
+        >
+            <i class="fa-solid fa-microphone"></i>
+            <span>ترجمة محادثة</span>
+        </button>
+
+    </div>
+
+
+    <!-- ترجمة الصورة -->
+
+    <div
+        class="problem-tool-card"
+        id="image-translation-card"
+    >
+
+
+
+
+                <div class="problem-tool-heading">
+
+                    <span class="problem-tool-icon translation">
+
+                        <i class="fa-solid fa-camera"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <span class="card-label">
+                            ترجمة لافتة
+                        </span>
+
+                        <h2>
+                            صوّر اللافتة
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <p class="problem-tool-description">
+                    ارفع صورة واضحة للافتة،
+                    ورفيق بعرضلك معناها بالعربي.
+                </p>
+
+
+
+                <label
+                    for="language-image"
+                    class="primary-btn journey-main-btn problem-primary-action problem-upload-action"
+                >
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <span>
+                        رفع صورة
+                    </span>
+
+                </label>
+
+
+
+                <input
+                    type="file"
+                    id="language-image"
+                    accept="image/*"
+                    capture="environment"
+                    hidden
+                >
+
+
+
+                <!-- Preview -->
+
+                <img
+                    id="image-preview"
+                    class="problem-image-preview"
+                    alt="صورة اللافتة"
+                >
+
+
+
+                <!-- Translation loading -->
+
+                <div
+                    id="translate-loading"
+                    class="problem-loading-final translation-loading-final"
+                >
+
+                    <span class="problem-loading-icon">
+
+                        <i class="fa-solid fa-language"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            رفيق بترجم الصورة...
+                        </strong>
+
+                        <span>
+                            لحظة بس
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Translation result -->
+
+                <div
+                    id="translation-result"
+                    class="problem-translation-result"
+                >
+
+                    <div class="translation-result-heading">
+
+                        <span>
+
+                            <i class="fa-solid fa-language"></i>
+
+                        </span>
+
+
+                        <small>
+                            الترجمة بالعربي
+                        </small>
+
+                    </div>
+
+
+                    <p id="arabic-translation"></p>
+
+                </div>
+
+
+            </div>
+
+            
+
+
+<!-- =========================================
+     VOICE TRANSLATION
+========================================= -->
+
+<div
+    class="problem-tool-card voice-translation-card"
+    id="voice-translation-card"
+    style="display:none;"
+>
+
+    <div class="problem-tool-heading">
+
+        <span class="problem-tool-icon translation">
+            <i class="fa-solid fa-comments"></i>
+        </span>
+
+        <div>
+            <span class="card-label">
+                ترجمة محادثة
+            </span>
+
+            <h2>
+                احكي... ورفيق بترجم
+            </h2>
+        </div>
+
+    </div>
+
+
+    <p class="problem-tool-description">
+        احكي بالعربي أو العبري، ورفيق بترجم الكلام
+        للغة الثانية وبقدر يقرأ الترجمة بصوت.
+    </p>
+
+
+    <!-- LANGUAGES -->
+
+    <div class="voice-language-box">
+
+        <div class="voice-language">
+            <small>أنا بحكي</small>
+            <strong id="voice-source-label">
+                العربية
+            </strong>
+        </div>
+
+
+        <button
+            type="button"
+            id="swap-voice-language"
+            class="voice-swap-btn"
+            aria-label="تبديل اللغة"
+        >
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        </button>
+
+
+        <div class="voice-language">
+            <small>الترجمة</small>
+            <strong id="voice-target-label">
+                עברית
+            </strong>
+        </div>
+
+    </div>
+
+
+    <!-- RECORD -->
+
+    <button
+        type="button"
+        id="voice-record-btn"
+        class="voice-record-btn"
+    >
+        <span class="voice-record-circle">
+            <i class="fa-solid fa-microphone"></i>
+        </span>
+
+        <span id="voice-record-text">
+            اضغط واحكي
+        </span>
+    </button>
+
+
+    <p
+        id="voice-status"
+        class="voice-status"
+        aria-live="polite"
+    ></p>
+
+
+    <!-- WHAT WE HEARD -->
+
+    <div
+        id="voice-heard-box"
+        class="voice-result-box"
+        style="display:none;"
+    >
+
+        <span class="voice-result-label">
+            سمعنا
+        </span>
+
+        <p id="voice-heard-text"></p>
+
+    </div>
+
+
+    <!-- TRANSLATION -->
+
+    <div
+        id="voice-translation-result"
+        class="voice-result-box translated"
+        style="display:none;"
+    >
+
+        <span class="voice-result-label">
+            الترجمة
+        </span>
+
+        <p
+            id="voice-translated-text"
+            dir="auto"
+        ></p>
+
+
+        <button
+            type="button"
+            id="play-voice-translation"
+            class="play-translation-btn"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+
+            <span>
+                استمع للترجمة
+            </span>
+        </button>
+
+    </div>
+
+
+    <div class="voice-privacy-note">
+
+        <i class="fa-solid fa-shield-heart"></i>
+
+        <span>
+            استخدم الترجمة للمساعدة في التواصل،
+            وتأكد من المعلومات الطبية المهمة مع الطاقم الطبي.
+        </span>
+
+    </div>
+
+</div>
+
+        </section>
+
+
+        <!-- =================================================
+             JS BACK BUTTON
+
+             نحافظ عليه لأن problem.js يعتمد على id="back-btn".
+        ================================================== -->
+
+        <button
+            type="button"
+            id="back-btn"
+            class="secondary-btn problem-js-back-btn"
+        >
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>
+                رجوع
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             BOTTOM
+        ================================================== -->
+
+        <div class="problem-bottom-action">
+
+
+    <a
+        href="index.html"
+        class="secondary-btn problem-return-journey"
+        data-smart-back
+    >
+        <i class="fa-solid fa-arrow-right"></i>
+
+        <span>
+            رجوع للمكان السابق
+        </span>
+    </a>
+
+</div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+
+<script src="js/problem.js"></script>
+<script src="js/accessibility.js"></script>
+<script src="js/navigation.js"></script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const problemSection =
+        document.getElementById("problem-section");
+
+    const locationSection =
+        document.getElementById("location-section");
+
+    const languageSection =
+        document.getElementById("language-section");
+
+    const backButton =
+        document.getElementById("back-btn");
+
+    const changeButtons =
+        document.querySelectorAll("[data-problem-back]");
+
+
+    /* ---------------------------------------------
+       New visual back buttons
+    --------------------------------------------- */
+
+    changeButtons.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            if (backButton) {
+                backButton.click();
+            }
+
+        });
+
+    });
+
+
+
+    /* ---------------------------------------------
+       Header → Translation
+
+       problem.html#translation-section
+       opens translation directly.
+    --------------------------------------------- */
+
+    if (window.location.hash === "#translation-section") {
+
+        if (problemSection) {
+            problemSection.style.display = "none";
+        }
+
+        if (locationSection) {
+            locationSection.style.display = "none";
+        }
+
+        if (languageSection) {
+
+            languageSection.hidden = false;
+
+            languageSection.style.display = "block";
+
+        }
+
+        if (backButton) {
+            backButton.style.display = "block";
+        }
+
+
+        setTimeout(function () {
+
+            languageSection?.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+
+        }, 100);
+
+    }
+
+});
+
+</script>
+
+
+</body>
+</html>

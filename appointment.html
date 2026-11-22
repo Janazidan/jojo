@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>تفاصيل الموعد | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <!-- Logo → Home -->
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="العودة للصفحة الرئيسية"
+    >
+
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+
+    </a>
+
+
+    <div class="header-tools">
+
+
+        <!-- الصوت -->
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+
+            <i class="fa-solid fa-volume-high"></i>
+
+            <span>
+                الصوت
+            </span>
+
+        </button>
+
+
+        <!-- الترجمة -->
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+
+            <i class="fa-solid fa-camera"></i>
+
+            <span>
+                ترجمة
+            </span>
+
+        </a>
+
+
+        <!-- الخدمات -->
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <span>
+                خدمات
+            </span>
+
+        </a>
+
+
+        <!--
+            أزرار تكبير وتصغير الخط
+            accessibility.js يضيفهم تلقائيًا
+        -->
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     PAGE
+===================================================== -->
+
+<main class="setup-page appointment-final-page">
+
+
+    <!-- =================================================
+         BACK
+    ================================================== -->
+
+    <div class="page-top-actions">
+
+        <a
+            href="readiness.html"
+            class="clear-back-link"
+        >
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+            <span>
+                اختيار المستشفى
+            </span>
+
+        </a>
+
+    </div>
+
+
+
+    <section class="setup-content">
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="journey-stage-label">
+
+            <div class="stage-icon">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    المرحلة الأولى
+                </span>
+
+                <strong>
+                    الاستعداد للرحلة
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="appointment-heading">
+
+            <h1>
+                متى موعدك؟
+            </h1>
+
+            <p class="page-description">
+                أدخل تاريخ ووقت موعدك،
+                حتى يرتب رفيق خطوات رحلتك.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             PROGRESS
+        ================================================== -->
+
+        <div
+            class="progress progress-accessible"
+            aria-label="مراحل الرحلة"
+        >
+
+
+            <div class="progress-step active">
+
+                <span>
+                    <i class="fa-solid fa-check"></i>
+                </span>
+
+                <p>
+                    الاستعداد
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    2
+                </span>
+
+                <p>
+                    الطريق
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    3
+                </span>
+
+                <p>
+                    المستشفى
+                </p>
+
+            </div>
+
+
+            <div class="progress-step">
+
+                <span>
+                    4
+                </span>
+
+                <p>
+                    بعد الزيارة
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             APPOINTMENT CARD
+        ================================================== -->
+
+        <div class="appointment-card appointment-card-final">
+
+
+            <!-- Card Heading -->
+
+            <div class="appointment-title-row">
+
+
+                <div class="appointment-main-icon">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        تفاصيل موعدك
+                    </h2>
+
+                    <p>
+                        الموعد في
+
+                        <strong id="appointment-hospital">
+                            المستشفى المختار
+                        </strong>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 DATE / TIME
+            ================================================== -->
+
+            <div class="appointment-fields appointment-fields-final">
+
+
+                <!-- Date -->
+
+                <div class="form-group appointment-field">
+
+
+                    <label for="appointment-date">
+
+                        <span class="field-label-icon">
+
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </span>
+
+                        <span>
+                            تاريخ الموعد
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="date"
+                        id="appointment-date"
+                        aria-label="تاريخ الموعد"
+                    >
+
+
+                </div>
+
+
+
+                <!-- Time -->
+
+                <div class="form-group appointment-field">
+
+
+                    <label for="appointment-time">
+
+                        <span class="field-label-icon">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                        </span>
+
+                        <span>
+                            وقت الموعد
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="time"
+                        id="appointment-time"
+                        aria-label="وقت الموعد"
+                    >
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Message -->
+
+            <p
+                id="appointment-message"
+                class="selection-message appointment-message-final"
+                aria-live="polite"
+            ></p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             NEXT
+        ================================================== -->
+
+        <button
+            type="button"
+            class="primary-btn appointment-next-final"
+            id="continue-appointment"
+        >
+
+            <span>
+                التالي
+            </span>
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </button>
+
+
+
+        <!-- =================================================
+             SMALL HELP
+        ================================================== -->
+
+        <div class="appointment-help">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>
+                بتقدر تغيّر الموعد لاحقًا إذا احتجت.
+            </p>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/main.js"></script>
+
+<script src="js/accessibility.js"></script>
+
+
+<script>
+
+    /*
+       حفظ مكان المستخدم
+       حتى يستطيع "أكمل رحلتي"
+       إرجاعه لهذه الصفحة
+    */
+
+    localStorage.setItem(
+        "rafiqCurrentPage",
+        "appointment.html"
+    );
+
+</script>
+
+
+</body>
+</html>

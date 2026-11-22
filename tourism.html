@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>اكتشف القدس | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/journey.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body class="inner-page tourism-page">
+
+<header class="header rafiq-inner-header">
+
+    <a href="index.html" class="inner-brand" aria-label="الصفحة الرئيسية">
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn active-header-tool"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<main class="journey-page tourism-main">
+
+<section class="journey-container tourism-container">
+
+    <!-- BACK -->
+
+    <div class="services-top-actions">
+
+        <a href="services.html" class="clear-back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>الخدمات القريبة</span>
+        </a>
+
+    </div>
+
+
+    <!-- LABEL -->
+
+    <div class="services-page-label">
+
+        <span class="services-label-icon">
+            <i class="fa-solid fa-landmark"></i>
+        </span>
+
+        <div>
+            <span>عيش المدينة</span>
+            <strong>اكتشف القدس</strong>
+        </div>
+
+    </div>
+
+
+    <!-- HEADING -->
+
+    <div class="services-heading tourism-heading">
+
+        <h1>عندك وقت في القدس؟</h1>
+
+        <p>
+            إذا عندك وقت قبل موعدك أو بعده،
+            تعرّف على بعض الأماكن الدينية والتاريخية
+            والتراثية في المدينة.
+        </p>
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="tourism-filters">
+
+        <button
+            type="button"
+            class="tourism-filter active"
+            data-filter="all"
+        >
+            الكل
+        </button>
+
+        <button
+            type="button"
+            class="tourism-filter"
+            data-filter="religious"
+        >
+            ديني
+        </button>
+
+        <button
+            type="button"
+            class="tourism-filter"
+            data-filter="historic"
+        >
+            تاريخي
+        </button>
+
+        <button
+            type="button"
+            class="tourism-filter"
+            data-filter="heritage"
+        >
+            تراثي
+        </button>
+
+    </div>
+
+
+    <!-- PLACES -->
+
+    <div class="tourism-grid">
+
+
+        <!-- =====================================
+             AL AQSA
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="religious"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-mosque"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    ديني • تاريخي
+                </span>
+
+                <h2>
+                    المسجد الأقصى والحرم القدسي الشريف
+                </h2>
+
+                <p>
+                    من أبرز المعالم الدينية والتاريخية
+                    في البلدة القديمة بالقدس.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        يقع الحرم القدسي الشريف في قلب البلدة القديمة،
+                        ويضم المسجد الأقصى وقبة الصخرة، ويحمل مكانة
+                        دينية وتاريخية كبيرة، كما يُعد من أبرز معالم القدس.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Al+Aqsa+Mosque+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             HOLY SEPULCHRE
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="religious"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-church"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    ديني • تاريخي
+                </span>
+
+                <h2>
+                    كنيسة القيامة
+                </h2>
+
+                <p>
+                    أحد أبرز المواقع المسيحية الدينية
+                    والتاريخية داخل البلدة القديمة.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        تقع كنيسة القيامة داخل البلدة القديمة،
+                        وهي من أهم الأماكن المقدسة في المسيحية،
+                        وترتبط بحسب التقليد المسيحي بصلب السيد
+                        المسيح ودفنه وقيامته.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Church+of+the+Holy+Sepulchre+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             VIA DOLOROSA
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="historic"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-route"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    ديني • تاريخي
+                </span>
+
+                <h2>
+                    طريق الآلام
+                </h2>
+
+                <p>
+                    مسار تاريخي وديني يمر عبر
+                    أزقة البلدة القديمة.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        طريق تاريخي وديني يمتد عبر أزقة البلدة القديمة
+                        وصولًا إلى كنيسة القيامة، ويرتبط في التقليد
+                        المسيحي بالطريق الذي سار فيه السيد المسيح
+                        نحو الصلب.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Via+Dolorosa+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             OLD CITY MARKETS
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="heritage"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-store"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    تراثي
+                </span>
+
+                <h2>
+                    أسواق البلدة القديمة
+                </h2>
+
+                <p>
+                    أسواق وأزقة تاريخية بتعكس
+                    الحياة والتراث المقدسي.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        تمتد الأسواق بين أزقة البلدة القديمة،
+                        وتجمع بين المحلات والحرف والمنتجات المحلية،
+                        وهي جزء من الحياة اليومية والتراث الاجتماعي
+                        والاقتصادي للمدينة.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Old+City+Market+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             OLD CITY WALLS
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="historic"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-archway"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    تاريخي
+                </span>
+
+                <h2>
+                    أسوار وأبواب البلدة القديمة
+                </h2>
+
+                <p>
+                    جزء أساسي من المشهد التاريخي
+                    والمعماري لمدينة القدس القديمة.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        تحيط الأسوار بالبلدة القديمة وتمنح القدس
+                        جزءًا مميزًا من صورتها التاريخية والمعمارية،
+                        وتضم أبوابًا معروفة تربط البلدة القديمة بمحيطها.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Old+City+Walls+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =====================================
+             MOUNT OF OLIVES
+        ====================================== -->
+
+        <article
+            class="tourism-card"
+            data-category="historic"
+        >
+
+            <div class="tourism-card-icon">
+                <i class="fa-solid fa-mountain-sun"></i>
+            </div>
+
+            <div class="tourism-card-content">
+
+                <span class="tourism-type">
+                    تاريخي • إطلالة
+                </span>
+
+                <h2>
+                    جبل الزيتون
+                </h2>
+
+                <p>
+                    منطقة تاريخية مطلة على القدس القديمة
+                    وتضم عددًا من المواقع الدينية.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="tourism-info-btn"
+                    onclick="togglePlaceInfo(this)"
+                >
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>عن المكان</span>
+                    <i class="fa-solid fa-chevron-down info-arrow"></i>
+                </button>
+
+
+                <div class="tourism-place-info">
+
+                    <p>
+                        يقع جبل الزيتون شرق البلدة القديمة،
+                        ويتميز بإطلالته على القدس، كما يضم مواقع
+                        دينية وتاريخية متعددة وله أهمية دينية
+                        وتاريخية كبيرة.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="https://www.google.com/maps/search/?api=1&query=Mount+of+Olives+Jerusalem"
+                    target="_blank"
+                    rel="noopener"
+                    class="tourism-map-btn"
+                >
+                    <i class="fa-solid fa-location-dot"></i>
+                    افتح على الخريطة
+                </a>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- NOTE -->
+
+    <div class="tourism-note">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <span>
+            خطط زيارتك حسب موعدك وحالتك الصحية،
+            وتحقق من إمكانية الوصول وساعات الزيارة قبل التوجه.
+        </span>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script>
+
+    /* =========================================
+       FILTERS
+    ========================================= */
+
+    const tourismFilters =
+        document.querySelectorAll(".tourism-filter");
+
+    const tourismCards =
+        document.querySelectorAll(".tourism-card");
+
+
+    tourismFilters.forEach(function (button) {
+
+        button.addEventListener("click", function () {
+
+            tourismFilters.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            button.classList.add("active");
+
+            const filter =
+                button.dataset.filter;
+
+
+            tourismCards.forEach(function (card) {
+
+                if (
+                    filter === "all" ||
+                    card.dataset.category === filter
+                ) {
+                    card.style.display = "flex";
+                }
+
+                else {
+                    card.style.display = "none";
+                }
+
+            });
+
+        });
+
+    });
+
+
+    /* =========================================
+       PLACE INFO
+    ========================================= */
+
+    function togglePlaceInfo(button) {
+
+        const info =
+            button.nextElementSibling;
+
+        if (!info) return;
+
+        const isOpen =
+            info.classList.contains("show");
+
+        info.classList.toggle("show");
+        button.classList.toggle("open");
+
+        const text =
+            button.querySelector("span");
+
+        if (text) {
+
+            text.textContent =
+                isOpen
+                    ? "عن المكان"
+                    : "إخفاء التفاصيل";
+
+        }
+    }
+
+</script>
+
+
+<script src="js/accessibility.js"></script>
+
+</body>
+</html>

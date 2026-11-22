@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>موعد المتابعة | رفيق</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/after-visit.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+
+<body class="inner-page after-visit-final-page follow-details-final-page">
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="header rafiq-inner-header">
+
+    <a
+        href="index.html"
+        class="inner-brand"
+        aria-label="الصفحة الرئيسية"
+    >
+        <img
+            src="assets/logo.png"
+            alt="رفيق"
+            class="header-logo"
+        >
+    </a>
+
+
+    <div class="header-tools">
+
+        <button
+            type="button"
+            class="simple-btn sound-btn header-icon-btn"
+            aria-label="قراءة الصفحة بصوت مرتفع"
+        >
+            <i class="fa-solid fa-volume-high"></i>
+            <span>الصوت</span>
+        </button>
+
+
+        <a
+            href="problem.html#translation-section"
+            class="simple-btn header-icon-btn"
+            aria-label="ترجمة لافتة"
+        >
+            <i class="fa-solid fa-camera"></i>
+            <span>ترجمة</span>
+        </a>
+
+
+        <a
+            href="services.html"
+            class="simple-btn header-icon-btn"
+            aria-label="الخدمات القريبة"
+        >
+            <i class="fa-solid fa-location-dot"></i>
+            <span>خدمات</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main class="setup-page after-visit-main">
+
+    <section class="setup-content after-visit-content">
+
+
+        <!-- Back -->
+
+        <div class="after-visit-top-actions">
+
+            <a
+                href="follow-up.html"
+                class="clear-back-link"
+            >
+                <i class="fa-solid fa-arrow-right"></i>
+
+                <span>
+                    موعد المتابعة
+                </span>
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================================
+             STAGE
+        ================================================== -->
+
+        <div class="after-visit-stage-label">
+
+            <div class="after-visit-stage-icon">
+
+                <i class="fa-solid fa-flag-checkered"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    المرحلة الرابعة
+                </span>
+
+                <strong>
+                    بعد الزيارة
+                </strong>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             HEADING
+        ================================================== -->
+
+        <div class="after-visit-heading follow-details-heading">
+
+            <h1>
+                سجّل موعد المتابعة
+            </h1>
+
+            <p>
+                أدخل التاريخ والوقت الموجودين على ورقة الموعد
+                أو اللي أعطاك إياهم المستشفى.
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             APPOINTMENT CARD
+        ================================================== -->
+
+        <div class="follow-details-card">
+
+
+            <div class="follow-details-card-heading">
+
+                <span class="follow-details-icon">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                </span>
+
+
+                <div>
+
+                    <span class="card-label">
+                        موعدك القادم
+                    </span>
+
+                    <h2>
+                        متى موعد المتابعة؟
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="question-card appointment-fields follow-fields-final">
+
+
+                <!-- Date -->
+
+                <div class="form-group follow-form-group">
+
+                    <label for="follow-date">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <span>
+                            التاريخ
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="date"
+                        id="follow-date"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+
+                <!-- Time -->
+
+                <div class="form-group follow-form-group">
+
+                    <label for="follow-time">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <span>
+                            الوقت
+                        </span>
+
+                    </label>
+
+
+                    <input
+                        type="time"
+                        id="follow-time"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MESSAGE
+        ================================================== -->
+
+        <div
+            id="follow-message"
+            class="follow-details-message"
+            aria-live="polite"
+        ></div>
+
+
+
+        <!-- =================================================
+             SAVE
+        ================================================== -->
+
+        <button
+            type="button"
+            id="save-follow-up"
+            class="primary-btn follow-details-save-btn"
+        >
+
+            <i class="fa-regular fa-floppy-disk"></i>
+
+            <span>
+                حفظ ومتابعة
+            </span>
+
+        </button>
+
+
+
+        <!-- Note -->
+
+        <div class="follow-details-note">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <span>
+                اكتب الموعد مثل ما هو موجود معك.
+                رفيق ما بغيّر أو يحدد موعد المستشفى.
+            </span>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<!-- =====================================================
+     SCRIPTS
+===================================================== -->
+
+<script src="js/accessibility.js"></script>
+<script src="js/after-visit.js"></script>
+
+
+<script>
+
+    localStorage.setItem(
+        "rafiqCurrentPage",
+        "follow-details.html"
+    );
+
+</script>
+
+
+</body>
+</html>
